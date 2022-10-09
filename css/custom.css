@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/TitanOne.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.navbar{
+	background-image: url('../buttonimg/college.png');
+    background-size: cover;
+}
+
+.navbar-brand, h1, h2, h3, h4 {
+
+  font-family: 'Jeju Gothic';
+
+}
+
+h5 {
+
+  font-family: 'Jeju Gothic';
+
+  font-size: 18px;
+
+}
+h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 80px;
+}
+
+body {
+	font-family: 'Noto Sans Korean';
+}
+
+.btn1{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: lightgray;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+   
+}
+.btn1:focus{
+   outline:none;
+   
+}
+.btn1:hover{
+   background-color: #6FB98F;
+   color:white;
+   
+}
+.btn2{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: lightgray;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+   
+}
+.btn2:focus{
+   outline:none;
+   
+}
+.btn2:hover{
+   background-color: #375E97;
+   color:white;
+   
+}
+.btn3{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: lightgray;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn3:focus{
+   outline:none;
+   
+}
+.btn3:hover{
+   background-color: #FB6542;
+   color:white;
+   
+}
+.btn4{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: lightgray;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn4:focus{
+   outline:none;
+   
+}
+.btn4:hover{
+   background-color: #ffbb00;
+   color:white;
+   
+}
+.btn5{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: lightgray;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn5:focus{
+   outline:none;
+   
+}
+.btn5:hover{
+   background-color: #598234;
+   color:white;
+   
+}
+.btn6{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: #6FB98F;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn7{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: #375E97;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn8{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: #FB6542;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn9{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: #ffbb00;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+.btn10{
+   font-size: 15px;
+   padding: 10px 15px;
+   background-color: #598234;
+   color:white;
+   border: 3px solid white;
+   border-radius:10px;
+   text-transform: uppercase;
+   letter-spacing:1px;
+   transition: all 0.4s;
+   font-family: 'Noto Sans Korean';
+}
+
+
+
+
+.btnal {
+	width:100px;
+	height:100px;
+	position:relative;
+	display: inline-block;
+	
+}
+
+.btn0 {
+	width: 100px;
+	height: 100px;
+    border: none;
+    color: inherit;
+    background: none;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    outline: none;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn img{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.bg {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+.btn-boarder {
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.animation {
+    -webkit-transform: translate(100px, -100px);
+    -moz-transform: translate(100px, -100px);
+    -o-transform: translate(100px, -100px);
+    -ms-transform: translate(100px, -100px);
+    transform: translate(100px, -100px);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.animation2 {
+    -webkit-animation: fadeIn 0.4s ease-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation: fadeIn 0.4s ease-out;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-delay: 0.4s;
+    animation: fadeIn 0.4s ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.around {
+    width: 101px;
+    height: 101px;
+    border: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    outline: none;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.around:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
