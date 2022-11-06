@@ -16,11 +16,12 @@ public class SearchDAO {
 
       try {
 
-         String dbURL = "jdbc:mysql://localhost:3306/jbnumap?serverTimezone=Asia/Seoul";
+        String dbURL = "jdbc:mysql://52.79.233.229:8080/jbnu/";
 
          String dbID = "root";
 
-         String dbPassword = "201946725";
+         String dbPassword = "****";
+
 
          Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -46,17 +47,17 @@ public class SearchDAO {
          while (rs.next()) {
             latitude.add(rs.getDouble(1));
          }
-         return latitude; // À§µµ
+         return latitude; // ìœ„ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -73,17 +74,17 @@ public class SearchDAO {
          while (rs.next()) {
             latitude.add(rs.getDouble(1));
          }
-         return latitude; // À§µµ
+         return latitude; // ìœ„ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList copyLatitude(String keyword) {
@@ -98,17 +99,17 @@ public class SearchDAO {
          while (rs.next()) {
             latitude.add(rs.getDouble(1));
          }
-         return latitude; // À§µµ
+         return latitude; // ìœ„ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList vendingLatitude(String keyword) {
@@ -123,17 +124,17 @@ public class SearchDAO {
          while (rs.next()) {
             latitude.add(rs.getDouble(1));
          }
-         return latitude; // À§µµ
+         return latitude; // ìœ„ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    
@@ -150,17 +151,17 @@ public class SearchDAO {
          while (rs.next()) {
             latitude.add(rs.getDouble(1));
          }
-         return latitude; // À§µµ
+         return latitude; // ìœ„ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -177,16 +178,16 @@ public class SearchDAO {
          while (rs.next()) {
             longitude.add(rs.getDouble(1));
          }
-         return longitude; // °æµµ
+         return longitude; // ê²½ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -203,16 +204,16 @@ public class SearchDAO {
          while (rs.next()) {
             longitude.add(rs.getDouble(1));
          }
-         return longitude; // °æµµ
+         return longitude; // ê²½ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList vendingLongitude(String keyword) {
@@ -227,16 +228,16 @@ public class SearchDAO {
          while (rs.next()) {
             longitude.add(rs.getDouble(1));
          }
-         return longitude; // °æµµ
+         return longitude; // ê²½ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList copyLongitude(String keyword) {
@@ -252,16 +253,16 @@ public class SearchDAO {
          while (rs.next()) {
             longitude.add(rs.getDouble(1));
          }
-         return longitude; // °æµµ
+         return longitude; // ê²½ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -277,16 +278,16 @@ public class SearchDAO {
          while (rs.next()) {
             longitude.add(rs.getDouble(1));
          }
-         return longitude; // °æµµ
+         return longitude; // ê²½ë„
 
       } catch (SQLException e) {
          e.printStackTrace();
 
       } catch (NullPointerException e) {
-         System.out.println("--NullPointerException ¹ß»ı--");
-         System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+         System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
       }
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -301,7 +302,7 @@ public class SearchDAO {
          while (rs.next()) {
             name.add("'" + rs.getString(1) + "'");
          }
-         return name; // °æµµ
+         return name; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -309,7 +310,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -326,7 +327,7 @@ public class SearchDAO {
          while (rs.next()) {
             name.add("'" + rs.getString(1) + "'");
          }
-         return name; // °æµµ
+         return name; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -334,7 +335,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList copyName(String keyword) {
@@ -348,7 +349,7 @@ public class SearchDAO {
          while (rs.next()) {
             name.add("'" + rs.getString(1) + "'");
          }
-         return name; // °æµµ
+         return name; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -356,7 +357,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList vendingName(String keyword) {
@@ -369,7 +370,7 @@ public class SearchDAO {
          while (rs.next()) {
             name.add("'" + rs.getString(1) + "'");
          }
-         return name; // °æµµ
+         return name; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -377,7 +378,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -391,7 +392,7 @@ public class SearchDAO {
          while (rs.next()) {
             name.add("'" + rs.getString(1) + "'");
          }
-         return name; // °æµµ
+         return name; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -399,7 +400,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -415,7 +416,7 @@ public class SearchDAO {
          while (rs.next()) {
             building.add("'" + rs.getString(1) + "'");
          }
-         return building; // °æµµ
+         return building; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -423,7 +424,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -441,7 +442,7 @@ public class SearchDAO {
          while (rs.next()) {
             deptnum.add("'" + rs.getString(1) + "'");
          }
-         return deptnum; // °æµµ
+         return deptnum; // ê²½ë„
 
       } catch (SQLException e) {
 
@@ -449,7 +450,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -475,7 +476,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList copyState(String keyword) {
@@ -500,7 +501,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
    public ArrayList vendingState(String keyword) {
@@ -524,7 +525,7 @@ public class SearchDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 }
