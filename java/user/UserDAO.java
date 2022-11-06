@@ -28,11 +28,12 @@ public class UserDAO {
 
       try {
 
-         String dbURL = "jdbc:mysql://localhost:3306/jbnumap";
+        String dbURL = "jdbc:mysql://52.79.233.229:8080/jbnu/";
 
          String dbID = "root";
 
-         String dbPassword = "201946725";
+         String dbPassword = "****";
+
 
          Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -64,15 +65,15 @@ public class UserDAO {
 
             if(rs.getString(1).equals(userPassword))
 
-               return 1; // ·Î±×ÀÎ ¼º°ø
+               return 1; // ë¡œê·¸ì¸ ì„±ê³µ
 
             else
 
-               return 0; // ºñ¹Ğ¹øÈ£ Æ²¸²
+               return 0; // ë¹„ë°€ë²ˆí˜¸ í‹€ë¦¼
 
          }
 
-         return -1; // ¾ÆÀÌµğ ¾øÀ½
+         return -1; // ì•„ì´ë”” ì—†ìŒ
 
       } catch (SQLException e) {
 
@@ -80,7 +81,7 @@ public class UserDAO {
 
       }
 
-      return -2; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return -2; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -110,7 +111,7 @@ public class UserDAO {
 
       }
 
-      return -1; // È¸¿ø°¡ÀÔ ½ÇÆĞ
+      return -1; // íšŒì›ê°€ì… ì‹¤íŒ¨
 
    }
 
@@ -130,7 +131,7 @@ public class UserDAO {
 
          while(rs.next()) {
 
-            return rs.getString(1); // ÀÌ¸ŞÀÏ ÁÖ¼Ò ¹İÈ¯
+            return rs.getString(1); // ì´ë©”ì¼ ì£¼ì†Œ ë°˜í™˜
 
          }
 
@@ -140,7 +141,7 @@ public class UserDAO {
 
       }
 
-      return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -160,7 +161,7 @@ public class UserDAO {
 
          while(rs.next()) {
 
-            return rs.getBoolean(1); // ÀÌ¸ŞÀÏ µî·Ï ¿©ºÎ ¹İÈ¯
+            return rs.getBoolean(1); // ì´ë©”ì¼ ë“±ë¡ ì—¬ë¶€ ë°˜í™˜
 
          }
 
@@ -170,7 +171,7 @@ public class UserDAO {
 
       }
 
-      return false; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+      return false; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
    }
 
@@ -188,7 +189,7 @@ public class UserDAO {
 
          pstmt.executeUpdate();
 
-         return true; // ÀÌ¸ŞÀÏ µî·Ï ¼³Á¤ ¼º°ø
+         return true; // ì´ë©”ì¼ ë“±ë¡ ì„¤ì • ì„±ê³µ
 
       } catch (SQLException e) {
 
@@ -196,7 +197,7 @@ public class UserDAO {
 
       }
 
-      return false; // ÀÌ¸ŞÀÏ µî·Ï ¼³Á¤ ½ÇÆĞ
+      return false; // ì´ë©”ì¼ ë“±ë¡ ì„¤ì • ì‹¤íŒ¨
 
    }
    
