@@ -15,11 +15,11 @@ public class InformationDAO {
 
       try {
 
-         String dbURL = "jdbc:mysql://localhost:3306/jbnumap";
+         String dbURL = "jdbc:mysql://52.79.233.229:8080/jbnu/";
 
          String dbID = "root";
 
-         String dbPassword = "201946725";
+         String dbPassword = "****";
 
          Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -46,17 +46,17 @@ public class InformationDAO {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                latitude.add(rs.getDouble(1));
-            }return latitude; //À§µµ
+            }return latitude; //ìœ„ë„
 
          } catch (SQLException e) {
             e.printStackTrace();
 
          }catch (NullPointerException e) { 
-            System.out.println("--NullPointerException ¹ß»ı--");
-            System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+            System.out.println("--NullPointerException ë°œìƒ--");
+            System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
          }
 
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
    
@@ -70,15 +70,15 @@ public class InformationDAO {
                rs = pstmt.executeQuery(SQL);
                while(rs.next()) {
                   longitude.add(rs.getDouble(1));
-            }return longitude; // °æµµ
+            }return longitude; // ê²½ë„
 
          } catch (SQLException e) {
             e.printStackTrace();
          }catch (NullPointerException e) { 
-            System.out.println("--NullPointerException ¹ß»ı--");
-            System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+            System.out.println("--NullPointerException ë°œìƒ--");
+            System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
          }
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
    
@@ -91,7 +91,7 @@ public class InformationDAO {
 
             while(rs.next()) {
                deptname.add("'"+rs.getString(1)+"'");
-            }return deptname; // °æµµ
+            }return deptname; // ê²½ë„
 
          } catch (SQLException e) {
 
@@ -99,7 +99,7 @@ public class InformationDAO {
 
          }
 
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
    public ArrayList getBuilding() {
@@ -111,7 +111,7 @@ public class InformationDAO {
 
             while(rs.next()) {
                building.add("'"+rs.getString(1)+"'");
-            }return building; // °æµµ
+            }return building; // ê²½ë„
 
          } catch (SQLException e) {
 
@@ -119,7 +119,7 @@ public class InformationDAO {
 
          }
 
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
    public ArrayList getNum() {
@@ -131,7 +131,7 @@ public class InformationDAO {
 
             while(rs.next()) {
                deptnum.add("'"+rs.getString(1)+"'");
-            }return deptnum; // °æµµ
+            }return deptnum; // ê²½ë„
 
          } catch (SQLException e) {
 
@@ -139,7 +139,7 @@ public class InformationDAO {
 
          }
 
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
    
@@ -154,17 +154,17 @@ public class InformationDAO {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                latitude.add(rs.getDouble(1));
-            }return latitude; //À§µµ
+            }return latitude; //ìœ„ë„
 
          } catch (SQLException e) {
             e.printStackTrace();
 
          }catch (NullPointerException e) { 
-            System.out.println("--NullPointerException ¹ß»ı--");
-            System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+            System.out.println("--NullPointerException ë°œìƒ--");
+            System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
          }
 
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
 
@@ -178,15 +178,15 @@ public ArrayList machineLongitude() {
                rs = pstmt.executeQuery(SQL);
                while(rs.next()) {
                   longitude.add(rs.getDouble(1));
-            }return longitude; // °æµµ
+            }return longitude; // ê²½ë„
 
          } catch (SQLException e) {
             e.printStackTrace();
          }catch (NullPointerException e) { 
-            System.out.println("--NullPointerException ¹ß»ı--");
-            System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+            System.out.println("--NullPointerException ë°œìƒ--");
+            System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
          }
-         return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+         return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
       }
 
@@ -199,7 +199,7 @@ public ArrayList machineName() {
 
        while(rs.next()) {
           name.add("'"+rs.getString(1)+"'");
-       }return name; // °æµµ
+       }return name; // ê²½ë„
 
     } catch (SQLException e) {
 
@@ -207,7 +207,7 @@ public ArrayList machineName() {
 
     }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -221,15 +221,15 @@ public ArrayList machineState() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                state.add(rs.getString(1));
-       }return state; // °æµµ
+       }return state; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -244,17 +244,17 @@ public ArrayList storeLatitude() {
        rs = pstmt.executeQuery(SQL);
        while(rs.next()) {
           latitude.add(rs.getDouble(1));
-       }return latitude; //À§µµ
+       }return latitude; //ìœ„ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
 
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -268,15 +268,15 @@ public ArrayList storeLongitude() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                longitude.add(rs.getDouble(1));
-       }return longitude; // °æµµ
+       }return longitude; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 public ArrayList storeName() {
@@ -288,18 +288,18 @@ public ArrayList storeName() {
 
        while(rs.next()) {
              name.add("'" +rs.getString(1)+ "'");
-       }return name; // °æµµ
+       }return name; // ê²½ë„
 
     } catch (SQLException e) {
 
        e.printStackTrace();
 
     }catch (NullPointerException e) { 
-         System.out.println("--NullPointerException ¹ß»ı--");
-           System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+           System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
         }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -314,17 +314,17 @@ public ArrayList vendingLatitude() {
        rs = pstmt.executeQuery(SQL);
        while(rs.next()) {
           latitude.add(rs.getDouble(1));
-       }return latitude; //À§µµ
+       }return latitude; //ìœ„ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
 
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -338,15 +338,15 @@ public ArrayList vendingLongitude() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                longitude.add(rs.getDouble(1));
-       }return longitude; // °æµµ
+       }return longitude; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -359,18 +359,18 @@ public ArrayList vendingName() {
 
        while(rs.next()) {
              name.add("'" +rs.getString(1)+ "'");
-       }return name; // °æµµ
+       }return name; // ê²½ë„
 
     } catch (SQLException e) {
 
        e.printStackTrace();
 
     }catch (NullPointerException e) { 
-         System.out.println("--NullPointerException ¹ß»ı--");
-           System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+         System.out.println("--NullPointerException ë°œìƒ--");
+           System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
         }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -384,15 +384,15 @@ public ArrayList vendingState() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                state.add("'" + rs.getString(1)+ "'");
-       }return state; // °æµµ
+       }return state; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -407,17 +407,17 @@ public ArrayList copyLatitude() {
        rs = pstmt.executeQuery(SQL);
        while(rs.next()) {
           latitude.add(rs.getDouble(1));
-       }return latitude; //À§µµ
+       }return latitude; //ìœ„ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
 
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -431,15 +431,15 @@ public ArrayList copyLongitude() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                longitude.add(rs.getDouble(1));
-       }return longitude; // °æµµ
+       }return longitude; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -452,7 +452,7 @@ public ArrayList copyName() {
 
        while(rs.next()) {
           name.add("'" + rs.getString(1) + "'");
-       }return name; // °æµµ
+       }return name; // ê²½ë„
 
     } catch (SQLException e) {
 
@@ -460,7 +460,7 @@ public ArrayList copyName() {
 
     }
 
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
@@ -474,15 +474,15 @@ public ArrayList copyState() {
             rs = pstmt.executeQuery(SQL);
             while(rs.next()) {
                state.add("'"+rs.getString(1)+"'");
-       }return state; // °æµµ
+       }return state; // ê²½ë„
 
     } catch (SQLException e) {
        e.printStackTrace();
     }catch (NullPointerException e) { 
-       System.out.println("--NullPointerException ¹ß»ı--");
-       System.out.println("±âÁ¸ ÄÚµå¸¦ Ã¼Å©ÇØ ÁÖ¼¼¿ä!!");
+       System.out.println("--NullPointerException ë°œìƒ--");
+       System.out.println("ê¸°ì¡´ ì½”ë“œë¥¼ ì²´í¬í•´ ì£¼ì„¸ìš”!!");
     }
-    return null; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+    return null; // ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 
  }
 
