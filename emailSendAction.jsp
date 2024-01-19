@@ -78,13 +78,13 @@
 
    // 사용자에게 보낼 메시지를 기입합니다.
 
-  String host = "http://localhost:8080/jbnu/";
+  String host = "http://localhost:8080/";
 
-   String from = "seoul8338@jbnu.ac.kr";
+   String from = "이메일주소";
 
    String to = userDAO.getUserEmail(userID);
 
-   String subject = "JBNU smart map 이메일 인증 메일입니다.";
+   String subject = "smart map이메일 인증 메일입니다.";
    
    String content = "다음 링크에 접속하여 이메일 확인을 진행하세요." +
 
