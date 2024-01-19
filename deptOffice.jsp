@@ -14,7 +14,7 @@
 
 <head>
 
-<title>JBNU Smartmap</title>
+<title> Smartmap</title>
 
 <meta charset="utf-8">
 
