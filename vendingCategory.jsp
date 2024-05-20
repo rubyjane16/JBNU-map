@@ -117,7 +117,7 @@ if(session.getAttribute("userID") != null) {
 
   
  
-      <div> <a class="navbar-brand" href="index.jsp" style="color: #ffbb00;"><h1>JBNU map</h1></a></div>
+      <div> <a class="navbar-brand" href="index.jsp" style="color: #ffbb00;"><h1>map</h1></a></div>
    
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
 
